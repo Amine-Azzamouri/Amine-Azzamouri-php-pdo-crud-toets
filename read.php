@@ -18,7 +18,8 @@ $sql = "SELECT Id
                 ,Model 
                 ,Topsnelheid
                 ,Prijs
-        FROM DureAuto";
+        FROM DureAuto"
+    . " ORDER BY Prijs ASC";
 
 $statement = $pdo->prepare($sql);
 
