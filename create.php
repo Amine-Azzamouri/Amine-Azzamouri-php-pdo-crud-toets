@@ -14,20 +14,25 @@ try {
 }
 
 $sql = "INSERT INTO richestpeople (Id 
-                            ,Name
-                            ,Networth
-                            ,Age
-                            ,MyCompany)
+                            ,Merk
+                            ,Model
+                            ,Topsnelheid
+                            ,Prijs)
         VALUES              (NULL
                             ,:Voornaam
                             ,:Tussenvoegsel
                             ,:Achternaam);";
-//   maak de query gereed met de prepare-method van het $pdo-object
+
 $statement = $pdo->prepare($sql);
+
 $statement->bindValue(':Name', $_POST['Name'], PDO::PARAM_STR);
+
 $statement->bindValue(':Networth', $_POST['Networth'], PDO::PARAM_STR);
+
 $statement->bindValue(':Age', $_POST['Age'], PDO::PARAM_STR);
+
 $statement->bindValue(':MyCompany', $_POST['MyCompany'], PDO::PARAM_STR);
+
 $statement->execute();
 
 header('Location: read.php');
