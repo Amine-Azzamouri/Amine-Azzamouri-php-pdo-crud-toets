@@ -50,10 +50,10 @@ foreach ($result as $info) {
 
 <table border='1'>
     <thead>
-        <th>Name</th>
-        <th>Networth</th>
-        <th>Age</th>
-        <th>MyCompany</th>
+        <th>Merk</th>
+        <th>Model</th>
+        <th>Topsnelheid</th>
+        <th>Prijs</th>
         <th>Delete</th>
     </thead>
     <tbody>
