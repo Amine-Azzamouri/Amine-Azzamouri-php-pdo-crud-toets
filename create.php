@@ -13,7 +13,7 @@ try {
     echo "systeemmelding: " . $e->getMessage();
 }
 
-$sql = "INSERT INTO richestpeople (Id 
+$sql = "INSERT INTO dureauto (Id 
                             ,Merk
                             ,Model
                             ,Topsnelheid
