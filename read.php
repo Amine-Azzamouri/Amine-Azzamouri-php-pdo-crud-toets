@@ -31,10 +31,10 @@ $result = $statement->fetchAll(PDO::FETCH_OBJ);
 $tableRows = "";
 foreach ($result as $info) {
     $tableRows .= "<tr>
-                        <td>$info->Name</td>
-                        <td>$info->Networth</td>
-                        <td>$info->Age</td>
-                        <td>$info->MyCompany</td>
+                        <td>$info->Merk</td>
+                        <td>$info->Model</td>
+                        <td>$info->Topsnelheid</td>
+                        <td>$info->Prijs</td>
                         <td>
                             <a href='delete.php?Id=$info->Id'>
                                 <img src='img/b_drop.png' alt='cross'>
