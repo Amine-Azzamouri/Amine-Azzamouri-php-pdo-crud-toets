@@ -1,6 +1,7 @@
 <?php
 include('config.php');
 
+
 $dsn = "mysql:host=$dbHost;dbname=$dbName;charset=UTF8";
 
 try {
