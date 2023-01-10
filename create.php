@@ -6,7 +6,7 @@ $dsn = "mysql:host=$dbHost;dbname=$dbName;charset=UTF8";
 
 try {
     $pdo = new PDO($dsn, $dbUser, $dbPass);
-    echo " er is een verbinding met de database";
+    echo " er is een verbinding met het database";
 } catch (PDOException $e) {
     echo "Er is geen verbinding met de database.<br>
         Neem contact op met de administrator<br>";
