@@ -6,7 +6,7 @@ $dsn = "mysql:host=$dbHost;dbname=$dbName;charset=UTF8";
 
 try {
     $pdo = new PDO($dsn, $dbUser, $dbPass);
-    echo " er is een verbinding met de database";
+    echo "";
 } catch (PDOException $e) {
     echo "Er is geen verbinding met de database.<br>
         Neem contact op met de administrator<br>";
@@ -18,7 +18,7 @@ $sql = "SELECT Id
                 ,Model 
                 ,Topsnelheid
                 ,Prijs
-        FROM dureauto";
+        FROM DureAuto";
 
 $statement = $pdo->prepare($sql);
 
@@ -47,7 +47,10 @@ foreach ($result as $info) {
 
 
 ?>
-<h3>The 5 richest people on earth</h3>
+<h3>Welkom bij Amine's php Toets!</h3>
+
+
+<h3>De vijf duurste auto's ter wereld!</h3>
 
 <table border='1'>
     <thead>
